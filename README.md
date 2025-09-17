@@ -34,8 +34,7 @@ To design and simulate a 4:1 Multiplexer (MUX) using Verilog HDL in four differe
 ## Verilog Code
 
 ### 4:1 MUX Gate-Level Implementation
-```verilog
-// Gate Level Modelling 
+```verilog 
 module mux21(a, b, s, y);
  input a, b, s;
  output y;
@@ -57,7 +56,6 @@ endmodule
 ```
 ### 4:1 MUX Gate-Level Implementation- Testbench
 ```verilog
-// Testbench Skeleton
 `timescale 1ns/1ps
 module MUX41_tb;
  reg [3:0] i;
@@ -86,7 +84,6 @@ endmodule
 ---
 ### 4:1 MUX Data flow Modelling
 ```verilog
-// Dataflow Modelling
 module MUX41(I,S,y);
 input [3:0]I;
 input [1:0]S;
@@ -102,7 +99,6 @@ endmodule
 ```
 ### 4:1 MUX Data flow Modelling- Testbench
 ```verilog
-// Testbench Skeleton
 `timescale 1ns/1ps
 module MUX_4_1_tb;
 reg [3:0]i;
@@ -153,7 +149,6 @@ endmodule
 ```
 ### 4:1 MUX Behavioral Modelling- Testbench
 ```verilog
-// Testbench Skeleton
 `timescale 1ns/1ps
 module MUX_4_1_tb;
 reg [3:0]i;
